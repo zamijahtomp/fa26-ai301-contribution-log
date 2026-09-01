@@ -1,15 +1,15 @@
-# Contribution [#]: [Issue Title]
+# Contribution #1: Add a svg icon for the crash cymbal
 
-**Contribution Number:** [1 / 2 / 3]  
-**Student:** [Your Name]  
-**Issue:** [GitHub issue link]  
-**Status:** [Phase I / Phase II / Phase III / Phase IV] [In Progress / Complete]
+**Contribution Number:** 1  
+**Student:** Zamijah Shakeur-Tompkins 
+**Issue:** [GitHub issue link](https://github.com/Babali42/DrumBeatRepo/issues/511)
+**Status:** Phase I Complete
 
 ---
 
 ## Why I Chose This Issue
 
-[1-2 paragraphs explaining why this issue interests you, how it matches your skills/learning goals, what you hope to learn]
+I chose this issue because I have an interest in UI/UX design and frontend development.
 
 ---
 
@@ -17,15 +17,15 @@
 
 ### Problem Description
 
-[In your own words, what's broken or missing?]
+The crash cymbal object doesn't have a relevant icon which reflects the object's purpose.
 
 ### Expected Behavior
 
-[What should happen?]
+There should be a relevant icon for the crash selection
 
 ### Current Behavior
 
-[What actually happens?]
+Currently, the icon is a wavelength, not too relevant to a crash cymbal
 
 ### Affected Components
 
