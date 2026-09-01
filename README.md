@@ -1,8 +1,8 @@
 # Contribution #1: Add a svg icon for the crash cymbal
 
 **Contribution Number:** 1  
-**Student:** Zamijah Shakeur-Tompkins 
-**Issue:** [GitHub issue link](https://github.com/Babali42/DrumBeatRepo/issues/511)
+**Student:** Zamijah Shakeur-Tompkins  
+**Issue:** [GitHub issue link](https://github.com/Babali42/DrumBeatRepo/issues/511)  
 **Status:** Phase I Complete
 
 ---
