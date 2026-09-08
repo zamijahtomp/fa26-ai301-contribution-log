@@ -21,15 +21,15 @@ The crash cymbal object doesn't have a relevant icon which reflects the object's
 
 ### Expected Behavior
 
-There should be a relevant icon for the crash selection
+There should be a relevant icon for the crash selection.
 
 ### Current Behavior
 
-Currently, the icon is a wavelength, not too relevant to a crash cymbal
+Currently, the icon is a wavelength, not too relevant to a crash cymbal.
 
 ### Affected Components
 
-[Which parts of the codebase are involved?]
+This issue affects the frontend of the application, potentially confusing users on the specific instrument listed, and in turn how to expect to use it.
 
 ---
 
@@ -37,13 +37,16 @@ Currently, the icon is a wavelength, not too relevant to a crash cymbal
 
 ### Environment Setup
 
-[Notes on setting up your local development environment - challenges you faced, how you solved them]
+Setting up the local environment was very simple, as I only had to install sbt tools, which in turn installed all the dependencies needed for the application. My only challenges faced were wether to install Scala separate from sbt, which you don't, and my NodeJS was outdated for Angular, so I had to update it.
 
 ### Steps to Reproduce
 
-1. [Step 1]
-2. [Step 2]
-3. [Observed result]
+1. Install [sbt tools](https://www.scala-sbt.org/) for app dependencies. You do not need Scala if you install sbt.
+2. Once setup, clone the repo and cd into DrumBeatRepo/engine/
+3. Run sbt fastLinkJS inside directory to set up tools.
+4. Open a new terminal and `cd` into `DrumBeatRepo/frontend/`
+5. Run `npm run start` within frontend directory 
+6. Application loads on a localhost server which you can go to. You will receive a notification to update your NodeJS for Angular if it is out of date.
 
 ### Reproduction Evidence
 
