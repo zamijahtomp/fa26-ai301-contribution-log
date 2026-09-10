@@ -42,17 +42,20 @@ Setting up the local environment was very simple, as I only had to install sbt t
 ### Steps to Reproduce
 
 1. Install [sbt tools](https://www.scala-sbt.org/) for app dependencies. You do not need Scala if you install sbt.
-2. Once setup, clone the repo and cd into DrumBeatRepo/engine/
-3. Run sbt fastLinkJS inside directory to set up tools.
+2. Once setup, clone the repo and `cd` into `DrumBeatRepo/engine/`
+3. Run `sbt fastLinkJS` inside directory to set up tools.
 4. Open a new terminal and `cd` into `DrumBeatRepo/frontend/`
 5. Run `npm run start` within frontend directory 
 6. Application loads on a localhost server which you can go to. You will receive a notification to update your NodeJS for Angular if it is out of date.
 
 ### Reproduction Evidence
 
-- **Commit showing reproduction:** [Link to commit in your fork]
-- **Screenshots/logs:** [If applicable]
-- **My findings:** [What you discovered during reproduction]
+- **Commit showing reproduction:** [https://github.com/shanker-codepath/DrumBeatRepo/tree/cymbal-image](https://github.com/shanker-codepath/DrumBeatRepo/tree/cymbal-image)
+- **Screenshots/logs:** <img src='./Screenshot (1556).png' title='Screenshot 1' width='' alt='Screenshot 1' /> <img src='./Screenshot (1558).png' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+- **My findings:** 
+  - My NodeJS wasn't fully updated
+  - I didn't have certain tools, like ng, installed so I got some errors that were quick to fix
+  - Pretty easy installation and reproduction overall
 
 ---
 
