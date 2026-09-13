@@ -63,30 +63,36 @@ Setting up the local environment was very simple, as I only had to install sbt t
 
 ### Analysis
 
-[Your analysis of the root cause - what's causing the issue?]
+There doesn't seem to be a proper image for the cymbal because there was never one created for it. Within the frontend files there isn't a variable for the `crash` cymbal like there are for `hihats` and `snare`. There also isn't an image for the crash cymbal like there are for the others within the images folder.
 
 ### Proposed Solution
 
-[High-level description of your fix approach]
+Add a new icon for the crash cymbal and add it into the application.
 
 ### Implementation Plan
 
 Using UMPIRE framework (adapted):
 
-**Understand:** [Restate the problem]
+**Understand:** For the *Rock* genre, there isn't a proper icon for the `crash` cymbal
 
-**Match:** [What similar patterns/solutions exist in the codebase?]
+**Match:** 
+- There are icons for the other instruments in `/frontend/src/assets/images/drums`
+- There is code linking the instruments to their icons in `/frontend/src/app/ui/pipes/drum-image.pipe.ts`
 
-**Plan:** [Step-by-step implementation plan]
-1. [Modify file X to do Y]
-2. [Add function Z]
-3. [Update tests]
+**Plan:** 
+1. Add crash cymbal variable and image link to `drum-image.pipe.ts`
+2. Add crash icons (dark & light) to `images/drums`
+3. Update tests
 
-**Implement:** [Link to your branch/commits as you work]
+**Implement:** 
+- [Crash Icon Code](https://github.com/shanker-codepath/DrumBeatRepo/blob/cymbal-image/frontend/src/app/ui/pipes/drum-image.pipe.ts)
+- [Crash Icon Dark](https://github.com/shanker-codepath/DrumBeatRepo/blob/cymbal-image/frontend/src/assets/images/drums/crash-dark.svg)
+- [Crash Icon Light](https://github.com/shanker-codepath/DrumBeatRepo/blob/cymbal-image/frontend/src/assets/images/drums/crash-light.svg)
 
-**Review:** [Self-review checklist - does it follow the project's contribution guidelines?]
+**Review:** 
+[x] [GNU General Public License](https://github.com/Babali42/DrumBeatRepo/blob/main/LICENSE)
 
-**Evaluate:** [How will you verify it works?]
+**Evaluate:** To evaluate, I will reproduce the issue by going to the genre and should expect to see the updated, correct icon for the crash cymbal.
 
 ---
 
