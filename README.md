@@ -89,8 +89,7 @@ Using UMPIRE framework (adapted):
 - [Crash Icon Dark](https://github.com/shanker-codepath/DrumBeatRepo/blob/cymbal-image/frontend/src/assets/images/drums/crash-dark.svg)
 - [Crash Icon Light](https://github.com/shanker-codepath/DrumBeatRepo/blob/cymbal-image/frontend/src/assets/images/drums/crash-light.svg)
 
-**Review:** 
-[x] [GNU General Public License](https://github.com/Babali42/DrumBeatRepo/blob/main/LICENSE)
+**Review:** [GNU General Public License](https://github.com/Babali42/DrumBeatRepo/blob/main/LICENSE)
 
 **Evaluate:** To evaluate, I will reproduce the issue by going to the genre and should expect to see the updated, correct icon for the crash cymbal.
 
