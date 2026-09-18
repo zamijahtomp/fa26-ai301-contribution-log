@@ -3,7 +3,7 @@
 **Contribution Number:** 1  
 **Student:** Zamijah Shakeur-Tompkins  
 **Issue:** [GitHub issue link](https://github.com/Babali42/DrumBeatRepo/issues/511)  
-**Status:** Phase II Complete
+**Status:** Phase III Complete
 
 ---
 
@@ -100,50 +100,50 @@ Using UMPIRE framework (adapted):
 
 ### Unit Tests
 
-- [ ] Test case 1: [Description]
-- [ ] Test case 2: [Description]
-- [ ] Test case 3: [Description]
+- [x] Test case 1: drum-image.pipe.ts returns the correct crash-dark / crash-light icon path when given the crash instrument type, matching the existing pattern used for hihats and snare
+- [x] Further test cases not necessary — scope was limited to wiring up an existing icon-lookup pattern for a new instrument type
 
 ### Integration Tests
 
-- [ ] Integration scenario 1
-- [ ] Integration scenario 2
+- [x]  Not applicable — the change only adds a new entry to the icon-lookup pipe and two static SVG assets; it doesn't introduce new component interactions to integration-test beyond what the pipe unit test already covers.
 
 ### Manual Testing
 
-[What you tested manually and results]
+I tested this manually rather than writing additional automated coverage. I ran the app locally, navigated to the Rock genre, and selected the crash cymbal to confirm the new icon (rather than the old wavelength placeholder) rendered correctly. I checked both the light and dark theme versions to make sure each icon displayed properly and matched the visual style of the other instrument icons (hihats, snare) already in the app.
 
 ---
 
 ## Implementation Notes
 
-### Week [X] Progress
+### Week 1 Progress
 
-[What you built this week, challenges faced, decisions made]
+Set up the local dev environment (sbt for the engine, npm/Angular for the frontend), reproduced the issue, and confirmed there was no existing crash entry in drum-image.pipe.ts or corresponding SVGs in the images folder — matching the pattern already used for hihats and snare.
 
-### Week [Y] Progress
+### Week 2 Progress
 
-[Continue documenting as you work]
+Implemented the fix: added the crash variable and icon path to drum-image.pipe.ts, sourced/created matching dark and light SVG icons for the crash cymbal, and dropped them into images/drums. Verified the fix manually by loading the app and selecting the crash cymbal in the Rock genre.
 
 ### Code Changes
 
-- **Files modified:** [List]
-- **Key commits:** [Links to important commits]
-- **Approach decisions:** [Why you chose certain approaches]
+- **Files modified:** 
+  - frontend/src/app/ui/pipes/drum-image.pipe.ts
+  - frontend/src/assets/images/drums/crash-dark.svg (new)
+  - frontend/src/assets/images/drums/crash-light.svg (new)
+- **Key commits:** [cymbal-image branch](https://github.com/shanker-codepath/DrumBeatRepo/tree/cymbal-image)
+- **Approach decisions:** Followed the existing convention in the codebase rather than inventing a new pattern — every other instrument has a matching dark/light SVG pair wired into the same pipe, so the crash cymbal just needed to follow that same structure for consistency with the rest of the UI.
 
 ---
 
 ## Pull Request
 
-**PR Link:** [GitHub PR URL when submitted]
+**PR Link:** [cymbal-image branch](https://github.com/shanker-codepath/DrumBeatRepo/tree/cymbal-image)
 
-**PR Description:** [Draft or final PR description - much of the content above can be adapted]
+**PR Description:** Not a proper PR, issue had been taken before we could submit, linking working branch instead with commits. Adds a dedicated crash cymbal icon (dark + light variants) and wires it into drum-image.pipe.ts, replacing the generic wavelength placeholder previously shown for the crash cymbal in the Rock genre.
 
 **Maintainer Feedback:**
-- [Date]: [Summary of feedback received]
-- [Date]: [How you addressed it]
+Submission for this contribution was handled through the course process rather than a direct back-and-forth with the repo maintainer.
 
-**Status:** [Awaiting review / Iterating / Approved / Merged]
+**Status:** Submitted
 
 ---
 
@@ -151,20 +151,19 @@ Using UMPIRE framework (adapted):
 
 ### Technical Skills Gained
 
-[What you learned technically]
+I got more comfortable navigating a mixed Scala/Angular codebase and understanding how a small frontend team structures reusable UI logic — in this case, a single pipe (drum-image.pipe.ts) that centralizes the instrument-to-icon mapping instead of hardcoding image paths in every component. I also practiced designing SVG icons that need to visually match an existing icon set (same style for dark/light themes).
 
 ### Challenges Overcome
 
-[What was hard and how you solved it]
+The trickiest parts were environment setup issues rather than the code change itself — my NodeJS version was too old for the Angular frontend, and I was missing the ng CLI, so I had to fix both before I could even reproduce the issue. Once the environment was working, the actual fix was straightforward since it just followed the existing pattern for other instruments.
 
 ### What I'd Do Differently Next Time
 
-[Reflection on your process]
+I'd double-check my local tooling versions (Node, Angular CLI) against the project's requirements before starting, so I'm not troubleshooting environment issues in the middle of trying to reproduce the bug. I'd also consider writing the pipe unit test as part of the same commit as the fix, rather than treating it as an afterthought.
 
 ---
 
 ## Resources Used
 
-- [Link to helpful documentation]
-- [Tutorial or Stack Overflow post that helped]
-- [GitHub issues or discussions that helped]
+- [https://www.svgrepo.com/](https://www.svgrepo.com/) — used to find/reference a crash cymbal icon style
+- [sbt documentation](https://www.scala-sbt.org/) — used for setting up the engine environment
