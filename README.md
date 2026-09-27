@@ -3,7 +3,7 @@
 **Contribution Number:** 1  
 **Student:** Zamijah Shakeur-Tompkins  
 **Issue:** [GitHub issue link](https://github.com/Babali42/DrumBeatRepo/issues/511)  
-**Status:** Phase III Complete
+**Status:** Phase IV Complete
 
 ---
 
